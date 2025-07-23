@@ -1,845 +1,537 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script
-      src="https://kit.fontawesome.com/475566af2a.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
-      rel="stylesheet"
-    />
-    <title>Home</title>
-  </head>
 
-  <body style="font-family: 'Manrope', sans-serif">
-    <!-- -------------------navbar--------------------------- -->
-    <nav
-      class="relative flex items-center justify-between sm:h-10 md:justify-center py-6 px-4 mt-2"
-    >
-      <div class="flex items-center flex-1 md:absolute md:inset-y-0 md:left-0">
-        <div class="flex items-center justify-between w-full md:w-auto">
-          <a href="" aria-label="Home">
-            <img src="logo.png" height="150" width="150" />
-          </a>
-          <div class="-mr-2 flex items-center md:hidden">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <script src="https://kit.fontawesome.com/475566af2a.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/475566af2a.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <title>Home</title>
+</head>
+
+<body style="font-family: 'Manrope', sans-serif; background-color: black;">
+  <!------------------------navbar---------------------------->
+
+  <nav class="relative flex items-center justify-between sm:h-10 md:justify-center py-6 px-4 mt-0 bg-white">
+    <div class="flex items-center flex-1 md:absolute md:inset-y-0 md:left-0">
+      <div class="flex items-center justify-between w-full md:w-auto">
+        <a href="" aria-label="Home">
+          <img src="logo.png" height="150" width="150" />
+        </a>
+        <div class="-mr-2 flex items-center md:hidden">
+          <button type="button" id="main-menu"
+            class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none">
+            <svg stroke="currentColor" fill="none" viewBox="0 0 24 24" class="h-6 w-6">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="hidden md:flex md:space-x-10">
+      <a href="index.html" class="font-medium text-gray-500 hover:text-gray-900">Home</a>
+      <a href="about.html" class="font-medium text-gray-500 hover:text-gray-900">About Us</a>
+      <a href="projects.html" class="font-medium text-gray-500 hover:text-gray-900">Projects</a>
+      <a href="#blog" class="font-medium text-gray-500 hover:text-gray-900">Blog</a>
+      <a href="#blog" class="font-medium text-gray-500 hover:text-gray-900">Gallery</a>
+      <a href="#blog" class="font-medium text-gray-500 hover:text-gray-900">Testimonials</a>
+      <a href="#blog" class="font-medium text-gray-500 hover:text-gray-900">Contact</a>
+    </div>
+    <div class="hidden md:absolute md:flex md:items-center md:justify-end md:inset-y-0 md:right-0">
+      <span class="inline-flex rounded-md shadow ml-2">
+        <a href="/signup"
+          class="inline-flex items-center px-4 py-2 mr-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gray-400 hover:bg-black">
+          Book Visit
+        </a>
+      </span>
+    </div>
+  </nav>
+
+  <section
+    class="relative w-full px-5 py-10 mx-auto flex flex-col lg:flex-row items-start lg:items-start gap-10 lg:gap-x-28">
+    <div class="lg:w-1/2 lg:pl-15">
+      <h1 class="title-font font-semibold text-5xl tracking-normal text-white">
+        Crafting quality living,
+      </h1>
+      <p class="leading-relaxed text-5xl tracking-normal font-semibold text-gray-400 mt-2">
+        one home at a time.
+      </p>
+      <p class="mt-4 text-base text-white">
+        We combine thoughtful design, personalised services, and a seamless
+        process to make your dream home a reality.
+      </p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-10">
+        <div class="bg-white shadow-md rounded-2xl p-6 text-center">
+          <p class="text-4xl font-bold text-black">250+</p>
+          <p class="mt-2 text-sm text-black">Projects Completed</p>
+        </div>
+        <div class="bg-white shadow-md rounded-2xl p-6 text-center">
+          <p class="text-4xl font-bold text-black">98%</p>
+          <p class="mt-2 text-sm text-black">Client Satisfaction Rate</p>
+        </div>
+        <div class="bg-white shadow-md rounded-2xl p-6 text-center">
+          <p class="text-4xl font-bold text-black">5+</p>
+          <p class="mt-2 text-sm text-black">Years of Experience</p>
+        </div>
+      </div>
+
+      <div class="flex justify-start mt-14">
+        <button class="text-black bg-gray-400 border-0 py-2 px-8 rounded text-lg hover:bg-white">
+          Find Your Dream Home
+        </button>
+      </div>
+    </div>
+
+    <div class="lg:w-[35%] w-full bg-[url('hse.jpg')] bg-cover bg-center rounded-lg p-10 shadow-lg">
+      <h2 class="text-white text-lg font-bold title-font font-bold mb-5">
+        Discover Your Perfect Home.
+      </h2>
+
+      <div class="mb-4">
+        <label class="text-sm text-white font-bold">House Type</label>
+        <select name="housetype"
+          class="w-full mt-1 bg-white rounded border border-gray-300 focus:border-black focus:ring-2 focus:ring-black text-base text-gray-700 py-2 px-3">
+          <option value="none" disabled selected>Select an option</option>
+          <option value="townhouse">Town House</option>
+          <option value="maison">Maisonette</option>
+        </select>
+      </div>
+
+      <div class="mb-4">
+        <label class="text-sm text-white font-bold">Location</label>
+        <select name="housetype"
+          class="w-full mt-1 bg-white rounded border border-gray-300 focus:border-black focus:ring-2 focus:ring-black text-base text-gray-700 py-2 px-3">
+          <option value="none" disabled selected>Select an option</option>
+          <option value="westie">Westlands</option>
+          <option value="lavi">Lavington</option>
+        </select>
+      </div>
+
+      <div class="mb-4">
+        <label class="text-sm text-white font-bold">Max Price</label>
+        <select name="housetype"
+          class="w-full mt-1 bg-white rounded border border-gray-300 focus:border-black focus:ring-2 focus:ring-black text-base text-gray-700 py-2 px-3">
+          <option value="none" disabled selected>Select an option</option>
+          <option value="20M">KES. 20,000,000</option>
+          <option value="25M">KES. 25,000,000</option>
+          <option value="30M">KES. 30,000,000</option>
+          <option value="35M">KES. 35,000,000</option>
+          <option value="40M">KES. 40,000,000</option>
+        </select>
+      </div>
+
+      <div class="mb-4">
+        <label class="block text-sm text-white mb-2 font-bold">Number of rooms</label>
+        <div class="flex flex-wrap gap-4">
+          <label class="inline-flex items-center">
+            <input type="radio" value="3" name="norooms" class="form-radio text-white h-4 w-4" />
+            <span class="ml-2 text-white font-bold">3</span>
+          </label>
+          <label class="inline-flex items-center">
+            <input type="radio" value="4" name="norooms" class="form-radio text-white h-4 w-4" />
+            <span class="ml-2 text-white font-bold">4</span>
+          </label>
+          <label class="inline-flex items-center">
+            <input type="radio" value="5" name="norooms" class="form-radio text-white h-4 w-4" />
+            <span class="ml-2 text-white font-bold">5</span>
+          </label>
+        </div>
+      </div>
+      <div>
+        <button class="text-white bg-gray-400 border-0 py-2 px-8 focus:outline-none hover:bg-black rounded text-lg">
+          Find a Home
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ----------------listing-------------------------------------------------- -->
+  <section class="py-12 bg-white sm:py-16 lg:py-20 -mt-10">
+    <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+      <div class="max-w-md mx-auto text-center">
+        <h2 class="text-2xl font-bold text-gray-900 sm:text-3xl">
+          Featured Listings
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-2 gap-6 -mt-10 lg:mt-10 lg:gap-4 lg:grid-cols-4">
+        <div class="relative group">
+          <div class="overflow-hidden aspect-w-1 aspect-h-1">
+            <img src="featured/lavington.jpg"
+              class="w-full h-64 object-cover transition-all duration-300 group-hover:scale-125" alt="" />
+          </div>
+          <div class="absolute left-3 top-3">
+            <p
+              class="sm:px-3 sm:py-1.5 px-1.5 py-1 text-[8px] sm:text-xs font-bold tracking-wide text-gray-900 uppercase bg-white rounded-full">
+              New
+            </p>
+          </div>
+          <div class="flex items-start justify-between mt-4 space-x-4">
+            <div>
+              <h3 class="text-xs text-gray-900 sm:text-sm md:text-base">
+                <a href="#" title="">
+                  Spacious 5-bedroom home in the heart of Lavington, featuring
+                  a private garden, DSQ, and modern finishes — perfect for
+                  upscale family living.
+                  <span class="absolute inset-0" aria-hidden="true"></span>
+                </a>
+              </h3>
+              <div class="flex items-center mt-2.5 space-x-px">
+                <svg class="w-3 h-3 text-yellow-400 sm:w-4 sm:h-4" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20" fill="currentColor">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg class="w-3 h-3 text-yellow-400 sm:w-4 sm:h-4" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20" fill="currentColor">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg class="w-3 h-3 text-yellow-400 sm:w-4 sm:h-4" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20" fill="currentColor">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg class="w-3 h-3 text-yellow-400 sm:w-4 sm:h-4" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20" fill="currentColor">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg class="w-3 h-3 text-gray-300 sm:w-4 sm:h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                  fill="currentColor">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+              </div>
+            </div>
+
+            <div class="text-right">
+              <p class="text-xs font-bold text-gray-900 sm:text-sm md:text-base">
+                KES.30M
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative group">
+          <div class="overflow-hidden aspect-w-1 aspect-h-1">
+            <img src="featured/west.jpg"
+              class="w-full h-64 object-cover transition-all duration-300 group-hover:scale-125" alt="" />
+          </div>
+          <div class="flex items-start justify-between mt-4 space-x-4">
+            <div>
+              <h3 class="text-xs text-gray-900 sm:text-sm md:text-base">
+                <a href="#" title="">
+                  Charming 4-bedroom town house in Westlands with a lush garden,
+                  ample parking, and easy access to shops and schools — ideal
+                  for families or investors.
+                  <span class="absolute inset-0" aria-hidden="true"></span>
+                </a>
+              </h3>
+              <div class="flex items-center mt-2.5 space-x-px">
+                <svg class="w-3 h-3 text-yellow-400 sm:w-4 sm:h-4" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20" fill="currentColor">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg class="w-3 h-3 text-yellow-400 sm:w-4 sm:h-4" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20" fill="currentColor">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg class="w-3 h-3 text-yellow-400 sm:w-4 sm:h-4" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20" fill="currentColor">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg class="w-3 h-3 text-yellow-400 sm:w-4 sm:h-4" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20" fill="currentColor">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg class="w-3 h-3 text-yellow-400 sm:w-4 sm:h-4" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20" fill="currentColor">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+              </div>
+            </div>
+
+            <div class="text-right">
+              <p class="text-xs font-bold text-gray-900 sm:text-sm md:text-base">
+                KES.20M
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative group">
+          <div class="overflow-hidden aspect-w-1 aspect-h-1">
+            <img src="featured/WESTIE2.jpg"
+              class="w-full h-64 object-cover transition-all duration-300 group-hover:scale-125" alt="" />
+          </div>
+          <div class="absolute left-3 top-3">
+            <p
+              class="sm:px-3 sm:py-1.5 px-1.5 py-1 text-[8px] sm:text-xs font-bold tracking-wide text-white uppercase bg-gray-900 rounded-full">
+              Sale
+            </p>
+          </div>
+          <div class="flex items-start justify-between mt-4 space-x-4">
+            <div>
+              <h3 class="text-xs text-gray-900 sm:text-sm md:text-base">
+                <a href="#" title="">
+                  Elegant 4-bedroom home in Westlands with spacious interiors,
+                  modern finishes, and secure parking — perfect for upscale
+                  urban living.
+                  <span class="absolute inset-0" aria-hidden="true"></span>
+                </a>
+              </h3>
+              <div class="flex items-center mt-2.5 space-x-px">
+                <svg class="w-3 h-3 text-yellow-400 sm:w-4 sm:h-4" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20" fill="currentColor">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg class="w-3 h-3 text-yellow-400 sm:w-4 sm:h-4" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20" fill="currentColor">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg class="w-3 h-3 text-yellow-400 sm:w-4 sm:h-4" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20" fill="currentColor">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg class="w-3 h-3 text-yellow-400 sm:w-4 sm:h-4" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20" fill="currentColor">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg class="w-3 h-3 text-yellow-400 sm:w-4 sm:h-4" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20" fill="currentColor">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+              </div>
+            </div>
+
+            <div class="text-right">
+              <p class="text-xs font-bold text-gray-900 sm:text-sm md:text-base">
+                KES.30M
+              </p>
+              <del class="mt-0.5 text-xs sm:text-sm font-bold text-gray-500">
+                40M
+              </del>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative group">
+          <div class="overflow-hidden aspect-w-1 aspect-h-1">
+            <img src="featured/lavington2.jpg"
+              class="w-full h-64 object-cover transition-all duration-300 group-hover:scale-125" alt=""/>
+          </div>
+          <div class="flex items-start justify-between mt-4 space-x-4">
+            <div>
+              <h3 class="text-xs text-gray-900 sm:text-sm md:text-base">
+                <a href="#" title="">
+                  Luxurious 5-bedroom residence in Lavington featuring
+                  en-suite rooms, spacious living areas, a private garden, and
+                  premium finishes — perfect for refined family living.
+                  <span class="absolute inset-0" aria-hidden="true"></span>
+                </a>
+              </h3>
+              <div class="flex items-center mt-2.5 space-x-px">
+                <svg class="w-3 h-3 text-yellow-400 sm:w-4 sm:h-4" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20" fill="currentColor">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg class="w-3 h-3 text-yellow-400 sm:w-4 sm:h-4" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20" fill="currentColor">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg class="w-3 h-3 text-yellow-400 sm:w-4 sm:h-4" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20" fill="currentColor">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg class="w-3 h-3 text-yellow-400 sm:w-4 sm:h-4" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20" fill="currentColor">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg class="w-3 h-3 text-yellow-400 sm:w-4 sm:h-4" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20" fill="currentColor">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+              </div>
+            </div>
+
+            <div class="text-right">
+              <p class="text-xs font-bold text-gray-900 sm:text-sm md:text-base">
+                KES.30M
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="gallery" class="relative w-full mb-10 bg-black" data-carousel="slide">
+    <div class="max-w-md mx-auto text-center">
+      <h2 class="text-2xl font-bold text-white sm:text-3xl mb-3 pt-8 -mt-10">
+        Partners
+      </h2>
+    </div>
+    <!-- Carousel wrapper -->
+    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+      <!-- Item 1 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+        <img src="partners/realestateco.jpg"
+          class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="" />
+      </div>
+      <!-- Item 2 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+        <img src="partners/dsign.jpg"
+          class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="" />
+      </div>
+      <!-- Item 3 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+        <img src="partners/creative.jpg"
+          class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="" />
+      </div>
+      <!-- Item 4 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+        <img src="partners/architect2.jpg"
+          class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="" />
+      </div>
+      <!-- Item 5 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+        <img src="partners/const.jpg"
+          class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="" />
+      </div>
+    </div>
+    <!-- Slider controls -->
+    <button type="button"
+      class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+      data-carousel-prev>
+      <span
+        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M5 1 1 5l4 4" />
+        </svg>
+        <span class="sr-only">Previous</span>
+      </span>
+    </button>
+    <button type="button"
+      class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+      data-carousel-next>
+      <span
+        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="m1 9 4-4-4-4" />
+        </svg>
+        <span class="sr-only">Next</span>
+      </span>
+    </button>
+  </div>
+
+  <!----------------------------------------footer--------------------------------- -->
+  <footer class="bottom-0 text-white bg-black body-font">
+    <div class="container px-5 pt-0 pb-0 mx-auto mb-0 mt-2">
+      <div class="flex flex-wrap md:text-left text-center order-first">
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4 p-5">
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">
+            Links
+          </h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a href="index.html" class="text-gray-600 hover:text-white">Home</a>
+            </li>
+            <li>
+              <a href="about.html" class="text-gray-600 hover:text-white">About Us</a>
+            </li>
+            <li>
+              <a href="projects.html" class="text-gray-600 hover:text-white">Projects</a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-600 hover:text-white">Blog</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4 p-5">
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">
+            More Links
+          </h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a href="#" class="text-gray-600 hover:text-white">Gallery</a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-600 hover:text-white">Testimonials</a>
+            </li>
+            <li>
+              <a href="contact.html" class="text-gray-600 hover:text-white">Contact Us</a>
+            </li>
+          </nav>
+          <p class="text-center pt-0 pb-0 text-bold">&copy BomaVue</p>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4 p-5">
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">
+            Social Media
+          </h2>
+          <nav class="list-none mb-10">
+            <li>
+              <i class="text-white fa-brands fa-facebook"></i>
+              <a class="text-gray-600 hover:text-white">Facebook</a>
+            </li>
+            <li>
+              <i class="text-white fa-brands fa-square-x-twitter"></i>
+              <a class="text-gray-600 hover:text-white">X</a>
+            </li>
+            <li>
+              <i class="text-white fa-brands fa-instagram"></i>
+              <a class="text-gray-600 hover:text-white">Instagram</a>
+            </li>
+            <li>
+              <i class="text-white fa-brands fa-linkedin"></i>
+              <a class="text-gray-600 hover:text-white">LinkedIn</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4 p-5">
+          <h2 class="title-font font-medium text-white tracking-widest text-xs mb-3">
+            SUBSCRIBE TO OUR NEWSLETTER
+          </h2>
+          <div
+            class="flex xl:flex-nowrap md:flex-nowrap lg:flex-wrap flex-wrap justify-center items-end md:justify-start">
+            <div class="relative w-40 sm:w-auto xl:mr-4 lg:mr-0 sm:mr-4 mr-2">
+              <label for="footer-field" class="leading-7 text-sm text-gray-600">E-mail</label>
+              <input type="email" id="footer-field" placeholder="Enter Your E-mail" name="footer-field"
+                class="text-xs w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:bg-white focus:ring-2 focus:ring-white focus:border-white text-base outline-none text-gray-700 py-1 px-4 leading-8 transition-colors duration-200 ease-in-out" />
+            </div>
             <button
-              type="button"
-              id="main-menu"
-              class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none"
-            >
-              <svg
-                stroke="currentColor"
-                fill="none"
-                viewBox="0 0 24 24"
-                class="h-6 w-6"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h16M4 18h16"
-                ></path>
-              </svg>
+              class="lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-white bg-gray-400 border-1 py-2 px-6 focus:outline-white hover:bg-black rounded">
+              Submit
             </button>
           </div>
         </div>
       </div>
-      <div class="hidden md:flex md:space-x-10">
-        <a
-          href="index.html"
-          class="font-medium text-gray-500 hover:text-gray-900"
-          >Home</a
-        >
-        <a href="#pricing" class="font-medium text-gray-500 hover:text-gray-900"
-          >About</a
-        >
-        <a href="#blog" class="font-medium text-gray-500 hover:text-gray-900"
-          >Projects</a
-        >
-        <a href="#blog" class="font-medium text-gray-500 hover:text-gray-900"
-          >Blog</a
-        >
-        <a href="#blog" class="font-medium text-gray-500 hover:text-gray-900"
-          >Gallery</a
-        >
-        <a href="#blog" class="font-medium text-gray-500 hover:text-gray-900"
-          >Testimonials</a
-        >
-        <a href="#blog" class="font-medium text-gray-500 hover:text-gray-900"
-          >Contact</a
-        >
-      </div>
-      <div
-        class="hidden md:absolute md:flex md:items-center md:justify-end md:inset-y-0 md:right-0"
-      >
-        <span class="inline-flex rounded-md shadow ml-2">
-          <a
-            href="/signup"
-            class="inline-flex items-center px-4 py-2 mr-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gray-400 hover:bg-black"
-          >
-            Book Visit
-          </a>
-        </span>
-      </div>
-    </nav>
-
-    <section
-      class="relative w-full px-5 py-10 mx-auto flex flex-col lg:flex-row items-start lg:items-start gap-10 lg:gap-x-28"
-    >
-      <div class="lg:w-1/2 lg:pl-15">
-        <h1 class="title-font font-medium text-5xl text-gray-900">
-          Crafting quality living,
-        </h1>
-        <p class="leading-relaxed text-5xl text-gray-400 mt-2">
-          one home at a time.
-        </p>
-        <p class="mt-4 text-base text-gray-600">
-          We combine thoughtful design, personalised services, and a seamless
-          process to make your dream home a reality.
-        </p>
-
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-10">
-          <div class="bg-black shadow-md rounded-2xl p-6 text-center">
-            <p class="text-4xl font-bold text-white">250+</p>
-            <p class="mt-2 text-sm text-white">Projects Completed</p>
-          </div>
-          <div class="bg-black shadow-md rounded-2xl p-6 text-center">
-            <p class="text-4xl font-bold text-white">98%</p>
-            <p class="mt-2 text-sm text-white">Client Satisfaction Rate</p>
-          </div>
-          <div class="bg-black shadow-md rounded-2xl p-6 text-center">
-            <p class="text-4xl font-bold text-white">5+</p>
-            <p class="mt-2 text-sm text-white">Years of Experience</p>
-          </div>
-        </div>
-
-        <div class="flex justify-start mt-14">
-          <button
-            class="text-white bg-gray-400 border-0 py-2 px-8 rounded text-lg hover:bg-black"
-          >
-            Find Your Dream Home
-          </button>
-        </div>
-      </div>
-
-      <div
-        class="lg:w-[35%] w-full bg-[url('hse.jpg')] bg-cover bg-center rounded-lg p-10 shadow-lg"
-      >
-        <h2 class="text-white text-lg font-medium title-font font-bold mb-5">
-          Discover Your Perfect Home.
-        </h2>
-
-        <div class="mb-4">
-          <label class="text-sm text-white font-bold">House Type</label>
-          <select
-            name="housetype"
-            class="w-full mt-1 bg-white rounded border border-gray-300 focus:border-black focus:ring-2 focus:ring-black text-base text-gray-700 py-2 px-3"
-          >
-            <option value="none" disabled selected>Select an option</option>
-            <option value="bungalow">Bungalow</option>
-            <option value="maison">Maisonette</option>
-          </select>
-        </div>
-
-        <div class="mb-4">
-          <label class="text-sm text-white font-bold">Location</label>
-          <select
-            name="housetype"
-            class="w-full mt-1 bg-white rounded border border-gray-300 focus:border-black focus:ring-2 focus:ring-black text-base text-gray-700 py-2 px-3"
-          >
-            <option value="none" disabled selected>Select an option</option>
-            <option value="westie">Westlands</option>
-            <option value="lavi">Lavington</option>
-          </select>
-        </div>
-
-        <div class="mb-4">
-          <label class="text-sm text-white font-bold">Max Price</label>
-          <select
-            name="housetype"
-            class="w-full mt-1 bg-white rounded border border-gray-300 focus:border-black focus:ring-2 focus:ring-black text-base text-gray-700 py-2 px-3"
-          >
-            <option value="none" disabled selected>Select an option</option>
-            <option value="20M">KES. 20,000,000</option>
-            <option value="25M">KES. 25,000,000</option>
-            <option value="30M">KES. 30,000,000</option>
-            <option value="35M">KES. 35,000,000</option>
-            <option value="40M">KES. 40,000,000</option>
-          </select>
-        </div>
-
-        <div class="mb-4">
-          <label class="block text-sm text-white mb-2 font-bold"
-            >Number of rooms</label
-          >
-          <div class="flex flex-wrap gap-4">
-            <label class="inline-flex items-center">
-              <input
-                type="radio"
-                value="1"
-                name="norooms"
-                class="form-radio text-white h-4 w-4"
-              />
-              <span class="ml-2 text-white font-bold">1</span>
-            </label>
-            <label class="inline-flex items-center">
-              <input
-                type="radio"
-                value="2"
-                name="norooms"
-                class="form-radio text-white h-4 w-4"
-              />
-              <span class="ml-2 text-white font-bold">2</span>
-            </label>
-            <label class="inline-flex items-center">
-              <input
-                type="radio"
-                value="3"
-                name="norooms"
-                class="form-radio text-white h-4 w-4"
-              />
-              <span class="ml-2 text-white font-bold">3</span>
-            </label>
-            <label class="inline-flex items-center">
-              <input
-                type="radio"
-                value="4"
-                name="norooms"
-                class="form-radio text-white h-4 w-4"
-              />
-              <span class="ml-2 text-white font-bold">4</span>
-            </label>
-            <label class="inline-flex items-center">
-              <input
-                type="radio"
-                value="5"
-                name="norooms"
-                class="form-radio text-white h-4 w-4"
-              />
-              <span class="ml-2 text-white font-bold">5</span>
-            </label>
-          </div>
-        </div>
-        <div>
-          <button
-            class="text-white bg-gray-400 border-0 py-2 px-8 focus:outline-none hover:bg-black rounded text-lg"
-          >
-            Find a Home
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <!-- ----------------listing-------------------------------------------------- -->
-    <section class="py-12 bg-white sm:py-16 lg:py-20 -mt-10">
-      <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-        <div class="max-w-md mx-auto text-center">
-          <h2 class="text-2xl font-bold text-gray-900 sm:text-3xl">
-            Featured Listings
-          </h2>
-        </div>
-
-        <div
-          class="grid grid-cols-2 gap-6 -mt-10 lg:mt-10 lg:gap-4 lg:grid-cols-4"
-        >
-          <div class="relative group">
-            <div class="overflow-hidden aspect-w-1 aspect-h-1">
-              <img
-                src="featured/lavington.jpg"
-                class="w-full h-64 object-cover transition-all duration-300 group-hover:scale-125"
-                alt=""
-              />
-            </div>
-            <div class="absolute left-3 top-3">
-              <p
-                class="sm:px-3 sm:py-1.5 px-1.5 py-1 text-[8px] sm:text-xs font-bold tracking-wide text-gray-900 uppercase bg-white rounded-full"
-              >
-                New
-              </p>
-            </div>
-            <div class="flex items-start justify-between mt-4 space-x-4">
-              <div>
-                <h3
-                  class="text-xs text-gray-900 sm:text-sm md:text-base"
-                >
-                  <a href="#" title="">
-                    Spacious 5-bedroom home in the heart of Lavington, featuring
-                    a private garden, DSQ, and modern finishes — perfect for
-                    upscale family living.
-                    <span class="absolute inset-0" aria-hidden="true"></span>
-                  </a>
-                </h3>
-                <div class="flex items-center mt-2.5 space-x-px">
-                  <svg
-                    class="w-3 h-3 text-yellow-400 sm:w-4 sm:h-4"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                    />
-                  </svg>
-                  <svg
-                    class="w-3 h-3 text-yellow-400 sm:w-4 sm:h-4"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                    />
-                  </svg>
-                  <svg
-                    class="w-3 h-3 text-yellow-400 sm:w-4 sm:h-4"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                    />
-                  </svg>
-                  <svg
-                    class="w-3 h-3 text-yellow-400 sm:w-4 sm:h-4"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                    />
-                  </svg>
-                  <svg
-                    class="w-3 h-3 text-gray-300 sm:w-4 sm:h-4"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                    />
-                  </svg>
-                </div>
-              </div>
-
-              <div class="text-right">
-                <p
-                  class="text-xs font-bold text-gray-900 sm:text-sm md:text-base"
-                >
-                  KES.30M
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="relative group">
-            <div class="overflow-hidden aspect-w-1 aspect-h-1">
-              <img
-                src="featured/WEST.jpg"
-                class="w-full h-64 object-cover transition-all duration-300 group-hover:scale-125"
-                alt=""
-              />
-            </div>
-            <div class="flex items-start justify-between mt-4 space-x-4">
-              <div>
-                <h3
-                  class="text-xs text-gray-900 sm:text-sm md:text-base"
-                >
-                  <a href="#" title="">
-                    Charming 3-bedroom bungalow in Westlands with a lush garden,
-                    ample parking, and easy access to shops and schools — ideal
-                    for families or investors.
-                    <span class="absolute inset-0" aria-hidden="true"></span>
-                  </a>
-                </h3>
-                <div class="flex items-center mt-2.5 space-x-px">
-                  <svg
-                    class="w-3 h-3 text-yellow-400 sm:w-4 sm:h-4"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                    />
-                  </svg>
-                  <svg
-                    class="w-3 h-3 text-yellow-400 sm:w-4 sm:h-4"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                    />
-                  </svg>
-                  <svg
-                    class="w-3 h-3 text-yellow-400 sm:w-4 sm:h-4"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                    />
-                  </svg>
-                  <svg
-                    class="w-3 h-3 text-yellow-400 sm:w-4 sm:h-4"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                    />
-                  </svg>
-                  <svg
-                    class="w-3 h-3 text-yellow-400 sm:w-4 sm:h-4"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                    />
-                  </svg>
-                </div>
-              </div>
-
-              <div class="text-right">
-                <p
-                  class="text-xs font-bold text-gray-900 sm:text-sm md:text-base"
-                >
-                  KES.20M
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="relative group">
-            <div class="overflow-hidden aspect-w-1 aspect-h-1">
-              <img
-                src="featured/westie2.jpg"
-                class="w-full h-64 object-cover transition-all duration-300 group-hover:scale-125"
-                alt=""
-              />
-            </div>
-            <div class="absolute left-3 top-3">
-              <p
-                class="sm:px-3 sm:py-1.5 px-1.5 py-1 text-[8px] sm:text-xs font-bold tracking-wide text-white uppercase bg-gray-900 rounded-full"
-              >
-                Sale
-              </p>
-            </div>
-            <div class="flex items-start justify-between mt-4 space-x-4">
-              <div>
-                <h3
-                  class="text-xs text-gray-900 sm:text-sm md:text-base"
-                >
-                  <a href="#" title="">
-                    Elegant 4-bedroom home in Westlands with spacious interiors,
-                    modern finishes, and secure parking — perfect for upscale
-                    urban living.
-                    <span class="absolute inset-0" aria-hidden="true"></span>
-                  </a>
-                </h3>
-                <div class="flex items-center mt-2.5 space-x-px">
-                  <svg
-                    class="w-3 h-3 text-yellow-400 sm:w-4 sm:h-4"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                    />
-                  </svg>
-                  <svg
-                    class="w-3 h-3 text-yellow-400 sm:w-4 sm:h-4"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                    />
-                  </svg>
-                  <svg
-                    class="w-3 h-3 text-yellow-400 sm:w-4 sm:h-4"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                    />
-                  </svg>
-                  <svg
-                    class="w-3 h-3 text-yellow-400 sm:w-4 sm:h-4"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                    />
-                  </svg>
-                  <svg
-                    class="w-3 h-3 text-yellow-400 sm:w-4 sm:h-4"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                    />
-                  </svg>
-                </div>
-              </div>
-
-              <div class="text-right">
-                <p
-                  class="text-xs font-bold text-gray-900 sm:text-sm md:text-base"
-                >
-                  KES.30M
-                </p>
-                <del class="mt-0.5 text-xs sm:text-sm font-bold text-gray-500">
-                  40M
-                </del>
-              </div>
-            </div>
-          </div>
-
-          <div class="relative group">
-            <div class="overflow-hidden aspect-w-1 aspect-h-1">
-              <img
-                src="featured/lavington2.jpg"
-                class="w-full h-64 object-cover transition-all duration-300 group-hover:scale-125"
-                alt=""
-              />
-            </div>
-            <div class="flex items-start justify-between mt-4 space-x-4">
-              <div>
-                <h3
-                  class="text-xs text-gray-900 sm:text-sm md:text-base"
-                >
-                  <a href="#" title="">
-                    Luxurious 5-bedroom residence in Lavington featuring
-                    en-suite rooms, spacious living areas, a private garden, and
-                    premium finishes — perfect for refined family living.
-                    <span class="absolute inset-0" aria-hidden="true"></span>
-                  </a>
-                </h3>
-                <div class="flex items-center mt-2.5 space-x-px">
-                  <svg
-                    class="w-3 h-3 text-yellow-400 sm:w-4 sm:h-4"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                    />
-                  </svg>
-                  <svg
-                    class="w-3 h-3 text-yellow-400 sm:w-4 sm:h-4"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                    />
-                  </svg>
-                  <svg
-                    class="w-3 h-3 text-yellow-400 sm:w-4 sm:h-4"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                    />
-                  </svg>
-                  <svg
-                    class="w-3 h-3 text-yellow-400 sm:w-4 sm:h-4"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                    />
-                  </svg>
-                  <svg
-                    class="w-3 h-3 text-yellow-400 sm:w-4 sm:h-4"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                    />
-                  </svg>
-                </div>
-              </div>
-
-              <div class="text-right">
-                <p
-                  class="text-xs font-bold text-gray-900 sm:text-sm md:text-base"
-                >
-                  KES.30M
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <div id="gallery" class="relative w-full mb-10" data-carousel="slide">
-        <div class="max-w-md mx-auto text-center">
-          <h2 class="text-2xl font-bold text-gray-900 sm:text-3xl mb-3 -mt-10">
-            Partners
-          </h2>
-          </div>
-      <!-- Carousel wrapper -->
-      <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-        <!-- Item 1 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img
-            src="partners/realestateco.jpg"
-            class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-            alt=""
-          />
-        </div>
-        <!-- Item 2 -->
-        <div
-          class="hidden duration-700 ease-in-out"
-          data-carousel-item="active"
-        >
-          <img
-            src="partners/dsign.jpg"
-            class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-            alt=""
-          />
-        </div>
-        <!-- Item 3 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img
-            src="partners/creative.jpg"
-            class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-            alt=""
-          />
-        </div>
-        <!-- Item 4 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img
-            src="partners/architect2.jpg"
-            class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-            alt=""
-          />
-        </div>
-        <!-- Item 5 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img
-            src="partners/const.jpg"
-            class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-            alt=""
-          />
-        </div>
-      </div>
-      <!-- Slider controls -->
-      <button
-        type="button"
-        class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-        data-carousel-prev
-      >
-        <span
-          class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
-        >
-          <svg
-            class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 6 10"
-          >
-            <path
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M5 1 1 5l4 4"
-            />
-          </svg>
-          <span class="sr-only">Previous</span>
-        </span>
-      </button>
-      <button
-        type="button"
-        class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-        data-carousel-next
-      >
-        <span
-          class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
-        >
-          <svg
-            class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 6 10"
-          >
-            <path
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="m1 9 4-4-4-4"
-            />
-          </svg>
-          <span class="sr-only">Next</span>
-        </span>
-      </button>
     </div>
-
-    <!----------------------------------------footer--------------------------------- -->
-    <footer class="bottom-0 text-white bg-black body-font">
-      <div class="container px-5 pt-0 pb-0 mx-auto mb-0 mt-2">
-        <div class="flex flex-wrap md:text-left text-center order-first">
-          <div class="lg:w-1/4 md:w-1/2 w-full px-4 p-5">
-            <h2
-              class="title-font font-medium text-white tracking-widest text-sm mb-3"
-            >
-              Links
-            </h2>
-            <nav class="list-none mb-10">
-              <li>
-                <a href="index.html" class="text-gray-600 hover:text-white"
-                  >Home</a
-                >
-              </li>
-              <li>
-                <a
-                  href="destinations.html"
-                  class="text-gray-600 hover:text-white"
-                  >Destinations</a
-                >
-              </li>
-              <li>
-                <a
-                  href="details.html"
-                  class="text-gray-600 hover:text-white"
-                  >Destination Details</a
-                >
-              </li>
-              <li>
-                <a
-                  href="bookings.html"
-                  class="text-gray-600 hover:text-white"
-                  >Bookings</a
-                >
-              </li>
-            </nav>
-          </div>
-          <div class="lg:w-1/4 md:w-1/2 w-full px-4 p-5">
-            <h2
-              class="title-font font-medium text-white tracking-widest text-sm mb-3"
-            >
-              More Links
-            </h2>
-            <nav class="list-none mb-10">
-              <li>
-                <a href="about.html" class="text-gray-600 hover:text-white"
-                  >About Us</a
-                >
-              </li>
-              <li>
-                <a href="tips.html" class="text-gray-600 hover:text-white"
-                  >Travel Tips</a
-                >
-              </li>
-              <li>
-                <a
-                  href="gallery.html"
-                  class="text-gray-600 hover:text-white"
-                  >Gallery</a
-                >
-              </li>
-              <li>
-                <a
-                  href="contact.html"
-                  class="text-gray-600 hover:text-white"
-                  >Contact Us</a
-                >
-              </li>
-            </nav>
-            <p class="text-center pt-0 pb-0 text-bold">&copy BomaVue</p>
-          </div>
-          <div class="lg:w-1/4 md:w-1/2 w-full px-4 p-5">
-            <h2
-              class="title-font font-medium text-white tracking-widest text-sm mb-3"
-            >
-              Social Media
-            </h2>
-            <nav class="list-none mb-10">
-              <li>
-                <i class="text-white fa-brands fa-facebook"></i>
-                <a class="text-gray-600 hover:text-white">Facebook</a>
-              </li>
-              <li>
-                <i class="text-white fa-brands fa-square-x-twitter"></i>
-                <a class="text-gray-600 hover:text-white">X</a>
-              </li>
-              <li>
-                <i class="text-white fa-brands fa-instagram"></i>
-                <a class="text-gray-600 hover:text-white">Instagram</a>
-              </li>
-              <li>
-                <i class="text-white fa-brands fa-linkedin"></i>
-                <a class="text-gray-600 hover:text-white">LinkedIn</a>
-              </li>
-            </nav>
-          </div>
-          <div class="lg:w-1/4 md:w-1/2 w-full px-4 p-5">
-            <h2
-              class="title-font font-medium text-white tracking-widest text-xs mb-3"
-            >
-              SUBSCRIBE TO OUR NEWSLETTER
-            </h2>
-            <div
-              class="flex xl:flex-nowrap md:flex-nowrap lg:flex-wrap flex-wrap justify-center items-end md:justify-start"
-            >
-              <div class="relative w-40 sm:w-auto xl:mr-4 lg:mr-0 sm:mr-4 mr-2">
-                <label
-                  for="footer-field"
-                  class="leading-7 text-sm text-gray-600"
-                  >E-mail</label
-                >
-                <input
-                  type="email"
-                  id="footer-field"
-                  placeholder="Enter Your E-mail"
-                  name="footer-field"
-                  class="text-xs w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:bg-white focus:ring-2 focus:ring-white focus:border-white text-base outline-none text-gray-700 py-1 px-4 leading-8 transition-colors duration-200 ease-in-out"
-                />
-              </div>
-              <button
-                class="lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-white bg-gray-400 border-1 py-2 px-6 focus:outline-white hover:bg-black rounded"
-              >
-                Submit
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-  </body>
+  </footer>
+</body>
 </html>
