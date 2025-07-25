@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+     <script src="https://unpkg.com/flowbite@1.5.2/dist/datepicker.js"></script>
+    <script
+      src="https://kit.fontawesome.com/475566af2a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+
+    <script
+      src="https://kit.fontawesome.com/475566af2a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Book Visit</title>
+  </head>
+  <body style="font-family: 'Manrope', sans-serif; background-color: black">
+    <header class="text-gray-600 body-font bg-white pt-0">
+      <div
+        class="pl-5 container mx-auto flex flex-wrap flex-col md:flex-row items-center"
+      >
+        <a
+          class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
+        >
+          <img
+            src="logo.png"
+            alt="Logo"
+            class="w-16 h-16 object-contain rounded-full bg-stone-200"
+          />
+        </a>
+        <nav
+          class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center"
+        >
+          <a href="index.html" class="mr-5 hover:text-gray-900">Home</a>
+          <a href="about.html" class="mr-5 hover:text-gray-900">About Us</a>
+          <a href="projects.html" class="mr-5 hover:text-gray-900">Projects</a>
+          <a href="blog.html" class="mr-5 hover:text-gray-900">Blog</a>
+          <a href="gallery.html" class="mr-5 hover:text-gray-900">Gallery</a>
+          <a href="testimonials.html" class="mr-5 hover:text-gray-900"
+            >Testimonials</a
+          >
+          <a href="contact.html" class="mr-5 hover:text-gray-900">Contact</a>
+        </nav>
+        <div class="pr-5">
+          <a href="booking.html"
+            ><button
+              class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-black hover:text-white rounded text-base mt-4 md:mt-0"
+            >
+              Book Visit
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-4 h-4 ml-1"
+                viewBox="0 0 24 24"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg></button
+          ></a>
+        </div>
+      </div>
+    </header>
+    <!-- ---------------------------------------------------------------------------------- -->
+    <div class="w-screen">
+      <div
+        class="relative mx-auto mt-10 mb-20 max-w-screen-lg overflow-hidden rounded-t-xl bg-orange-500/60 py-8 text-center shadow-xl shadow-gray-300"
+      >
+        <h1 class="mt-2 px-2 text-3xl font-bold text-white md:text-5xl">
+          Book a Visit
+        </h1>
+        <p class="mt-6 text-lg text-white">
+          Get an appointment with our property specialists
+        </p>
+        <img
+          class="absolute top-0 left-0 -z-10 h-full w-full object-cover"
+          src="https://images.unsplash.com/photo-1504672281656-e4981d70414b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+          alt=""
+        />
+      </div>
+
+      <div class="mx-auto grid max-w-screen-lg px-6 pb-20">
+        <div class="flex flex-row flex-wrap gap-x-8 b-10">
+          <div class="">
+            <p class="text-xl font-bold text-white">First Name</p>
+            <div class="relative mt-4 w-56">
+              <div
+                class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"
+              ></div>
+              <input
+                type="text"
+                class="block w-full rounded-lg border border-orange-300 bg-orange-50 p-3 pl-10 text-black outline-none ring-opacity-30 placeholder:text-black placeholder:text-sm focus:ring focus:ring-orange-300 sm:text-sm"
+                placeholder="First Name"
+              />
+            </div>
+          </div>
+
+          <div class="">
+            <p class="text-xl font-bold text-white">Last Name</p>
+            <div class="relative mt-4 w-56">
+              <div
+                class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"
+              ></div>
+              <input
+                type="text"
+                class="block w-full rounded-lg border border-orange-300 bg-orange-50 p-3 pl-10 text-black outline-none ring-opacity-30 placeholder:text-black placeholder:text-sm focus:ring focus:ring-orange-300 sm:text-sm"
+                placeholder="Last Name"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-4 mb-2">
+          <p class="text-xl font-bold text-white">Phone Number</p>
+          <div class="relative mt-4 w-96">
+            <div
+              class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"
+            ></div>
+            <input
+              type="number"
+              class="block w-full rounded-lg border border-orange-300 bg-orange-50 p-3 pl-10 text-black outline-none ring-opacity-30 placeholder:text-black placeholder:text-sm focus:ring focus:ring-orange-300 sm:text-sm"
+              placeholder="Phone Number"
+            />
+          </div>
+        </div>
+
+        <div class="mt-4 mb-2">
+          <p class="text-xl font-bold text-white">E-mail Address</p>
+          <div class="relative mt-4 w-96">
+            <div
+              class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"
+            ></div>
+            <input
+              type="email"
+              class="block w-full rounded-lg border border-orange-300 bg-orange-50 p-3 pl-10 text-black outline-none ring-opacity-30 placeholder:text-black placeholder:text-sm focus:ring focus:ring-orange-300 sm:text-sm"
+              placeholder="E-mail Address"
+            />
+          </div>
+        </div>
+
+        <p class="text-xl font-bold text-white mt-4">Select a location</p>
+        <div
+          class="mt-4 grid max-w-3xl gap-x-4 gap-y-3 sm:grid-cols-2 md:grid-cols-3"
+        >
+          <div class="relative bg-white rounded-lg">
+            <input
+              class="peer hidden"
+              id="radio_1"
+              type="checkbox"
+              name="location"
+              checked
+            />
+            <span
+              class="absolute right-4 top-1/2 box-content block h-3 w-3 -translate-y-1/2 rounded-full border-8 border-gray-300 bg-white peer-checked:border-orange-400"
+            ></span>
+            <label
+              class="flex h-full cursor-pointer flex-col rounded-lg p-4 shadow-lg shadow-slate-100 peer-checked:bg-orange-500 peer-checked:text-white"
+              for="radio_1"
+            >
+              <span class="mt-2 font-medium text-sm">Lavington</span>
+            </label>
+          </div>
+
+          <div class="relative bg-white rounded-lg">
+            <input class="peer hidden" id="radio_2" type="checkbox" name="location" />
+            <span
+              class="absolute right-4 top-1/2 box-content block h-3 w-3 -translate-y-1/2 rounded-full border-8 border-gray-300 bg-white peer-checked:border-orange-400"
+            ></span>
+
+            <label
+              class="flex h-full cursor-pointer flex-col rounded-lg p-4 shadow-lg shadow-slate-100 peer-checked:bg-orange-500 peer-checked:text-white"
+              for="radio_2"
+            >
+              <span class="mt-2 font-medium text-sm">Westlands</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="mt-4 mb-2">
+          <p class="text-xl font-bold text-white mt-2">Property Type</p>
+          <div class="relative mt-4 w-96">
+            <select
+              name="housetype"
+              class="block w-full rounded-lg text-lg border border-orange-300 bg-orange-50 p-3 pl-10 text-black outline-none ring-opacity-30 placeholder:text-black placeholder:text-lg focus:ring focus:ring-orange-300 sm:text-sm"
+            >
+              <option class="text-sm" value="none" disabled selected>
+                Select an option
+              </option>
+              <option class="text-sm" value="townhouse">Town House</option>
+              <option class="text-sm" value="maison">Maisonette</option>
+            </select>
+          </div>
+        </div>
+
+        <p class="text-xl font-bold text-white mt-4">Number of rooms</p>
+        <div
+          class="mt-4 grid max-w-3xl gap-x-4 gap-y-3 sm:grid-cols-2 md:grid-cols-3"
+        >
+          <div class="relative bg-white rounded-lg">
+            <input
+              class="peer hidden"
+              id="radio_3"
+              type="checkbox"
+              name="rooms"
+              checked
+            />
+            <span
+              class="absolute right-4 top-1/2 box-content block h-3 w-3 -translate-y-1/2 rounded-full border-8 border-gray-300 bg-white peer-checked:border-orange-400"
+            ></span>
+            <label
+              class="flex h-full cursor-pointer flex-col rounded-lg p-4 shadow-lg shadow-slate-100 peer-checked:bg-orange-500 peer-checked:text-white"
+              for="radio_3"
+            >
+              <span class="mt-2 font-medium text-sm">Three (3)</span>
+            </label>
+          </div>
+
+          <div class="relative bg-white rounded-lg">
+            <input
+              class="peer hidden"
+              id="radio_4"
+              type="checkbox"
+              name="rooms"
+            />
+            <span
+              class="absolute right-4 top-1/2 box-content block h-3 w-3 -translate-y-1/2 rounded-full border-8 border-gray-300 bg-white peer-checked:border-orange-400"
+            ></span>
+
+            <label
+              class="flex h-full cursor-pointer flex-col rounded-lg p-4 shadow-lg shadow-slate-100 peer-checked:bg-orange-500 peer-checked:text-white"
+              for="radio_4"
+            >
+              <span class="mt-2 font-medium text-sm">Four (4)</span>
+            </label>
+          </div>
+                  <div class="relative bg-white rounded-lg">
+            <input
+              class="peer hidden"
+              id="radio_5"
+              type="checkbox"
+              name="rooms"
+            />
+            <span
+              class="absolute right-4 top-1/2 box-content block h-3 w-3 -translate-y-1/2 rounded-full border-8 border-gray-300 bg-white peer-checked:border-orange-400"
+            ></span>
+
+            <label
+              class="flex h-full cursor-pointer flex-col rounded-lg p-4 shadow-lg shadow-slate-100 peer-checked:bg-orange-500 peer-checked:text-white"
+              for="radio_5"
+            >
+              <span class="mt-2 font-medium text-sm">Five (5)</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="-mt-2">
+          <p class="mt-8 text-xl font-bold text-white">Select a date (Monday-Friday)</p>
+          <div class="relative mt-4 w-56">
+            <div
+              class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"
+            >
+              <svg
+                aria-hidden="true"
+                class="h-5 w-5 text-gray-500"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </div>
+            <input
+              datepicker=""
+              datepicker-orientation="bottom"
+              autofocus="autofocus"
+              type="text"
+              class="datepicker-input block w-full rounded-lg border border-orange-300 bg-orange-50 p-2.5 pl-10 text-orange-800 outline-none ring-opacity-30 placeholder:text-orange-800 focus:ring focus:ring-orange-300 sm:text-sm"
+              placeholder="Select date"
+            />
+          </div>
+        </div>
+
+        <div class="">
+          <p class="mt-8 text-xl font-bold text-white">
+            Select a time (0800hrs-1700hrs)
+          </p>
+            <input
+              timepicker=""
+              timepicker-orientation="bottom"
+              autofocus="autofocus"
+              type="time"
+              class="datepicker-input block w-56 rounded-lg border border-orange-300 bg-orange-50 p-2.5 pl-10 text-orange-800 outline-none ring-opacity-30 placeholder:text-orange-800 focus:ring focus:ring-orange-300 sm:text-sm"
+              placeholder="Select date"
+            />
+          
+        </div>
+         <div class="">
+          <p class="mt-8 text-xl font-bold text-white">
+            Specifications
+          </p>
+            <textarea placeholder="Add any specific requirements or details here." class=" rounded-lg w-96 h-56  bg-orange-50 p-3 text-black placeholder:text-black placeholder:text-sm border border-orange-300 outline-none focus:ring focus:ring-orange-300"></textarea> 
+        </div>
+        <button
+          class="mt-8 w-56 rounded-full border-8 border-orange-500 bg-orange-600 px-10 py-4 text-lg font-bold text-white transition hover:translate-y-1"
+        >
+          Book Now
+        </button>
+      </div>
+    </div>
+   
+  </body>
+</html>

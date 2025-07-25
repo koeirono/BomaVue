@@ -23,80 +23,52 @@
   </head>
 
   <body style="font-family: 'Manrope', sans-serif; background-color: black">
-    <nav
-      class="relative flex items-center justify-between sm:h-10 md:justify-center py-6 px-4 mt-0 bg-white"
-    >
-      <div class="flex items-center flex-1 md:absolute md:inset-y-0 md:left-0">
-        <div class="flex items-center justify-between w-full md:w-auto">
-          <a href="" aria-label="Home">
-            <img src="logo.png" height="150" width="150" />
-          </a>
-          <div class="-mr-2 flex items-center md:hidden">
-            <button
-              type="button"
-              id="main-menu"
-              class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none"
-            >
-              <svg
-                stroke="currentColor"
-                fill="none"
-                viewBox="0 0 24 24"
-                class="h-6 w-6"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h16M4 18h16"
-                ></path>
-              </svg>
-            </button>
-          </div>
+ <header class="text-gray-600 body-font bg-white pt-0">
+      <div
+        class="pl-5 container mx-auto flex flex-wrap flex-col md:flex-row items-center"
+      >
+        <a
+          class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
+        >
+          <img
+        src="logo.png"
+        alt="Logo"
+        class="w-16 h-16 object-contain rounded-full bg-stone-200"
+      />
+    
+        
+        </a>
+        <nav
+          class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center"
+        >
+          <a href="index.html" class="mr-5 hover:text-gray-900">Home</a>
+          <a href="about.html" class="mr-5 hover:text-gray-900">About Us</a>
+          <a href="projects.html" class="mr-5 hover:text-gray-900">Projects</a>
+          <a href="blog.html" class="mr-5 hover:text-gray-900">Blog</a>
+          <a href="gallery.html" class="mr-5 hover:text-gray-900">Gallery</a>
+          <a href="testimonials.html" class="mr-5 hover:text-gray-900">Testimonials</a>
+          <a href="contact.html" class="mr-5 hover:text-gray-900">Contact</a>
+        </nav>
+        <div class="pr-5">
+        <button
+          class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-black hover:text-white rounded text-base mt-4 md:mt-0"
+        >
+          Book Visit
+          <svg
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            class="w-4 h-4 ml-1"
+            viewBox="0 0 24 24"
+          >
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </button>
         </div>
       </div>
-      <div class="hidden md:flex md:space-x-10">
-        <a
-          href="index.html"
-          class="font-medium text-gray-500 hover:text-gray-900"
-          >Home</a
-        >
-        <a
-          href="about.html"
-          class="font-medium text-gray-500 hover:text-gray-900"
-          >About Us</a
-        >
-        <a
-          href="projects.html"
-          class="font-medium text-gray-500 hover:text-gray-900"
-          >Projects</a
-        >
-        <a href="#blog" class="font-medium text-gray-500 hover:text-gray-900"
-          >Blog</a
-        >
-        <a href="#blog" class="font-medium text-gray-500 hover:text-gray-900"
-          >Gallery</a
-        >
-        <a href="#blog" class="font-medium text-gray-500 hover:text-gray-900"
-          >Testimonials</a
-        >
-        <a href="#blog" class="font-medium text-gray-500 hover:text-gray-900"
-          >Contact</a
-        >
-      </div>
-      <div
-        class="hidden md:absolute md:flex md:items-center md:justify-end md:inset-y-0 md:right-0"
-      >
-        <span class="inline-flex rounded-md shadow ml-2">
-          <a
-            href="/signup"
-            class="inline-flex items-center px-4 py-2 mr-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gray-400 hover:bg-black"
-          >
-            Book Visit
-          </a>
-        </span>
-      </div>
-    </nav>
-
+    </header>
     <!-- ----------------------------------------------------------- -->
     <div
       class="overflow-hidden h-96 bg-[url('interior/livpeponi.jpg')] bg-cover bg-center flex flex-col items-center justify-center text-center px-4"
@@ -182,7 +154,7 @@
     </section>
     <!-- ----------------------------------gallery------------------------------------------ -->
     <div
-      class="grid min-h-[140px] w-full place-items-center overflow-x-scroll rounded-lg p-6 lg:overflow-visible"
+      class="grid min-h-[140px] w-full place-items-center overflow-x-scroll rounded-lg p-12 lg:overflow-visible"
     >
       <div class="grid grid-cols-4 gap-2">
         <div>
@@ -243,6 +215,8 @@
         </div>
       </div>
     </div>
+     <div class="flex flex justify-center">
+    <a href="booking.html"><button class="items-center content-center  border-1 rounded-lg bg-white text-black p-3 hover:bg-black hover:text-white hover:border-2">Book Visit</button></a></div>
     <!-- -----------------------------footer-------------------------------------------------------------------- -->
     <footer class="bottom-0 text-white bg-black body-font">
       <div class="container px-5 pt-0 pb-0 mx-auto mb-0 mt-2">

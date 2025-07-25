@@ -23,79 +23,165 @@
     <title>Projects</title>
   </head>
   <body style="font-family: 'Manrope', sans-serif; background-color: black">
-    <nav
-      class="relative flex items-center justify-between sm:h-10 md:justify-center py-6 px-4 mt-0 bg-white"
-    >
-      <div class="flex items-center flex-1 md:absolute md:inset-y-0 md:left-0">
-        <div class="flex items-center justify-between w-full md:w-auto">
-          <a href="" aria-label="Home">
-            <img src="logo.png" height="150" width="150" />
-          </a>
-          <div class="-mr-2 flex items-center md:hidden">
-            <button
-              type="button"
-              id="main-menu"
-              class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none"
-            >
-              <svg
-                stroke="currentColor"
-                fill="none"
-                viewBox="0 0 24 24"
-                class="h-6 w-6"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h16M4 18h16"
-                ></path>
-              </svg>
-            </button>
-          </div>
+   <header class="text-gray-600 body-font bg-white pt-0">
+      <div
+        class="pl-5 container mx-auto flex flex-wrap flex-col md:flex-row items-center"
+      >
+        <a
+          class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
+        >
+          <img
+        src="logo.png"
+        alt="Logo"
+        class="w-16 h-16 object-contain rounded-full bg-stone-200"
+      />
+    
+        
+        </a>
+        <nav
+          class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center"
+        >
+          <a href="index.html" class="mr-5 hover:text-gray-900">Home</a>
+          <a href="about.html" class="mr-5 hover:text-gray-900">About Us</a>
+          <a href="projects.html" class="mr-5 hover:text-gray-900">Projects</a>
+          <a href="blog.html" class="mr-5 hover:text-gray-900">Blog</a>
+          <a href="gallery.html" class="mr-5 hover:text-gray-900">Gallery</a>
+          <a href="testimonials.html" class="mr-5 hover:text-gray-900">Testimonials</a>
+          <a href="contact.html" class="mr-5 hover:text-gray-900">Contact</a>
+        </nav>
+        <div class="pr-5">
+        <a href="booking.html"><button
+          class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-black hover:text-white rounded text-base mt-4 md:mt-0"
+        >
+          Book Visit
+          <svg
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            class="w-4 h-4 ml-1"
+            viewBox="0 0 24 24"
+          >
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </button></a>
         </div>
       </div>
-      <div class="hidden md:flex md:space-x-10">
-        <a
-          href="index.html"
-          class="font-medium text-gray-500 hover:text-gray-900"
-          >Home</a
+    </header>
+    <!---------------------------------------------------------------------  -->
+    <form class="max-w-lg mx-auto mt-2">
+      <div class="flex">
+        <label
+          for="search-dropdown"
+          class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
+          >Your Email</label
         >
-        <a
-          href="about.html"
-          class="font-medium text-gray-500 hover:text-gray-900"
-          >About Us</a
+        <button
+          id="dropdown-button"
+          data-dropdown-toggle="dropdown"
+          class="shrink-0 z-10 inline-flex items-center py-2.5 px-4 text-sm font-medium text-center text-gray-900 bg-gray-100 border border-gray-300 rounded-s-lg hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700 dark:text-white dark:border-gray-600"
+          type="button"
         >
-        <a
-          href="projects.html"
-          class="font-medium text-gray-500 hover:text-gray-900"
-          >Projects</a
-        >
-        <a href="#blog" class="font-medium text-gray-500 hover:text-gray-900"
-          >Blog</a
-        >
-        <a href="#blog" class="font-medium text-gray-500 hover:text-gray-900"
-          >Gallery</a
-        >
-        <a href="#blog" class="font-medium text-gray-500 hover:text-gray-900"
-          >Testimonials</a
-        >
-        <a href="#blog" class="font-medium text-gray-500 hover:text-gray-900"
-          >Contact</a
-        >
-      </div>
-      <div
-        class="hidden md:absolute md:flex md:items-center md:justify-end md:inset-y-0 md:right-0"
-      >
-        <span class="inline-flex rounded-md shadow ml-2">
-          <a
-            href="/signup"
-            class="inline-flex items-center px-4 py-2 mr-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gray-400 hover:bg-black"
+          All categories
+          <svg
+            class="w-2.5 h-2.5 ms-2.5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 10 6"
           >
-            Book Visit
-          </a>
-        </span>
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="m1 1 4 4 4-4"
+            />
+          </svg>
+        </button>
+        <div
+          id="dropdown"
+          class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700"
+        >
+          <ul
+            class="py-2 text-sm text-gray-700 dark:text-gray-200"
+            aria-labelledby="dropdown-button"
+          >
+            <li>
+              <button
+                type="button"
+                class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+              >
+                Lavington
+              </button>
+            </li>
+            <li>
+              <button
+                type="button"
+                class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+              >
+                Westlands
+              </button>
+            </li>
+            <li>
+              <button
+                type="button"
+                class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+              >
+                3-br house
+              </button>
+            </li>
+            <li>
+              <button
+                type="button"
+                class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+              >
+                4-br house
+              </button>
+            </li>
+            <li>
+              <button
+                type="button"
+                class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+              >
+                5-br house
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="relative w-full">
+          <input
+            type="search"
+            id="search-dropdown"
+            class="block p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-e-lg border-s-gray-50 border-s-2 border border-gray-300 focus:ring-orange-500 focus:border-orange-500 dark:bg-gray-700 dark:border-s-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-orange-500"
+            placeholder="Search No. of rooms, Location..."
+            required
+          />
+          <button
+            type="submit"
+            class="absolute top-0 end-0 p-2.5 text-sm font-medium h-full text-white bg-orange-700 rounded-e-lg border border-orange-700 hover:bg-white focus:ring-4 focus:outline-none focus:ring-black dark:bg-black dark:hover:bg-orange-700 dark:focus:ring-white"
+          >
+            <svg
+              class="w-4 h-4"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 20 20"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+              />
+            </svg>
+            <span class="sr-only">Search</span>
+          </button>
+        </div>
       </div>
-    </nav>
+    </form>
 
     <!-- -------------------------------main content------------------------------------------------ -->
     <section class="display flex pl-10 flex-wrap gap-x-5">
@@ -103,10 +189,11 @@
         class="relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-96"
       >
         <div class="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
-          <a href="muthangari.html"> <img
-            src="featured/lavington.jpg"
-            class="w-full h-full object-covertransition-all duration-300 hover:scale-125"
-            alt="card-image"
+          <a href="muthangari.html">
+            <img
+              src="featured/lavington.jpg"
+              class="w-full h-full object-covertransition-all duration-300 hover:scale-125"
+              alt="card-image"
           /></a>
         </div>
         <div class="p-4">
@@ -167,12 +254,14 @@
         </div>
 
         <div class="px-4 pb-4 pt-0 mt-2">
-          <a href="muthangari.html"><button
-            class="w-full rounded-md bg-black py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-            type="button"
+          <a href="muthangari.html"
+            ><button
+              class="w-full rounded-md bg-black py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+              type="button"
+            >
+              View Details
+            </button></a
           >
-            View Details
-          </button></a>
         </div>
       </div>
       <!-- ----------------------------------------------------------------------------- -->
@@ -180,11 +269,12 @@
         class="relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-96"
       >
         <div class="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
-          <a href="green.html"><img
-            src="featured/lavington2.jpg"
-            class="w-full h-full object-covertransition-all duration-300 hover:scale-125"
-            alt="card-image"
-          /></a> 
+          <a href="green.html"
+            ><img
+              src="featured/lavington2.jpg"
+              class="w-full h-full object-covertransition-all duration-300 hover:scale-125"
+              alt="card-image"
+          /></a>
         </div>
         <div class="p-4">
           <div class="flex items-center mb-2">
@@ -244,12 +334,14 @@
         </div>
 
         <div class="px-4 pb-4 pt-0 mt-2">
-             <a href="green.html"><button
-            class="w-full rounded-md bg-black py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-            type="button"
+          <a href="green.html"
+            ><button
+              class="w-full rounded-md bg-black py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+              type="button"
+            >
+              View Details
+            </button></a
           >
-            View Details
-          </button></a>
         </div>
       </div>
       <!-- ---------------------------------------------------------------------------------------------- -->
@@ -257,10 +349,11 @@
         class="relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-96"
       >
         <div class="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
-          <a href="hatheru.html"><img
-            src="projects/proj1.jpg"
-            class="w-full h-full object-covertransition-all duration-300 hover:scale-125"
-            alt="card-image"
+          <a href="hatheru.html"
+            ><img
+              src="projects/proj1.jpg"
+              class="w-full h-full object-covertransition-all duration-300 hover:scale-125"
+              alt="card-image"
           /></a>
         </div>
         <div class="p-4">
@@ -321,23 +414,27 @@
         </div>
 
         <div class="px-4 pb-4 pt-0 mt-2">
-          <a href="hatheru.html"><button
-            class="w-full rounded-md bg-black py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-            type="button">
-            View Details
-          </button></a>
+          <a href="hatheru.html"
+            ><button
+              class="w-full rounded-md bg-black py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+              type="button"
+            >
+              View Details
+            </button></a
+          >
         </div>
       </div>
-<!-- ---------------------------------------------------------------- -->
+      <!-- ---------------------------------------------------------------- -->
       <div
         class="relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-96"
       >
         <div class="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
-          <a href="brookside.html"><img
-            src="featured/west.jpg"
-            class="w-full h-full object-covertransition-all duration-300 hover:scale-125"
-            alt="card-image"
-          /></a> 
+          <a href="brookside.html"
+            ><img
+              src="featured/west.jpg"
+              class="w-full h-full object-covertransition-all duration-300 hover:scale-125"
+              alt="card-image"
+          /></a>
         </div>
         <div class="p-4">
           <div class="flex items-center mb-2">
@@ -397,12 +494,14 @@
         </div>
 
         <div class="px-4 pb-4 pt-0 mt-2">
-          <a href="brookside.html"><button
-            class="w-full rounded-md bg-black py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-            type="button"
+          <a href="brookside.html"
+            ><button
+              class="w-full rounded-md bg-black py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+              type="button"
+            >
+              View Details
+            </button></a
           >
-            View Details
-          </button></a>
         </div>
       </div>
       <!-- -------------------------------------------------------------------------- -->
@@ -411,10 +510,11 @@
         class="relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-96"
       >
         <div class="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
-          <a href="peponi.html"> <img
-            src="featured/WESTIE2.jpg"
-            class="w-full h-full object-covertransition-all duration-300 hover:scale-125"
-            alt="card-image"
+          <a href="peponi.html">
+            <img
+              src="featured/WESTIE2.jpg"
+              class="w-full h-full object-covertransition-all duration-300 hover:scale-125"
+              alt="card-image"
           /></a>
         </div>
         <div class="p-4">
@@ -475,23 +575,26 @@
         </div>
 
         <div class="px-4 pb-4 pt-0 mt-2">
-          <a href="peponi.html"><button
-            class="w-full rounded-md bg-black py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-            type="button"
+          <a href="peponi.html"
+            ><button
+              class="w-full rounded-md bg-black py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+              type="button"
+            >
+              View Details
+            </button></a
           >
-            View Details
-          </button></a>
         </div>
       </div>
-<!-- ---------------------------------------------------------------------------------- -->
+      <!-- ---------------------------------------------------------------------------------- -->
       <div
         class="relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-96"
       >
         <div class="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
-          <a href="raphta.html"> <img
-            src="projects/proj2.jpg"
-            class="w-full h-full object-covertransition-all duration-300 hover:scale-125"
-            alt="card-image"
+          <a href="raphta.html">
+            <img
+              src="projects/proj2.jpg"
+              class="w-full h-full object-covertransition-all duration-300 hover:scale-125"
+              alt="card-image"
           /></a>
         </div>
         <div class="p-4">
@@ -552,12 +655,14 @@
         </div>
 
         <div class="px-4 pb-4 pt-0 mt-2">
-          <a href="raphta.html"><button
-            class="w-full rounded-md bg-black py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-            type="button"
+          <a href="raphta.html"
+            ><button
+              class="w-full rounded-md bg-black py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+              type="button"
+            >
+              View Details
+            </button></a
           >
-            View Details
-          </button></a>
         </div>
       </div>
     </section>
@@ -589,7 +694,7 @@
                 >
               </li>
               <li>
-                <a href="#" class="text-gray-600 hover:text-white">Blog</a>
+                <a href="blog.html" class="text-gray-600 hover:text-white">Blog</a>
               </li>
             </nav>
           </div>
